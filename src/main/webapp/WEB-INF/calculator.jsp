@@ -20,6 +20,7 @@
         <br>
         <button id="clear">Clear</button>
         <p id="result"></p>
+        
         <script>
             var result = document.getElementById("result");
             var operations = document.getElementById("operations").children;
@@ -31,7 +32,7 @@
                     var n1 = document.getElementById("firstNumber").value;
                     var n2 = document.getElementById("secondNumber").value;
 
-                    fetch(`calculator?operation=${operation}&n1=${n1}&n2=${n2}`)
+                    fetch(`calculatorServlet?operation=${operation}&n1=${n1}&n2=${n2}`)
                             .then(res => res.text())
                             .then(d => {
                                 result.innerHTML = d;
