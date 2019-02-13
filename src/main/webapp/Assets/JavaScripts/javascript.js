@@ -17,7 +17,7 @@ for (var i = 0; i < operations.length; i++) {
 
 clear.addEventListener('click', function (event) {
     result.innerHTML = "";
-})
+});
 
 function switcherino(operation) {
     switch (operation) {
