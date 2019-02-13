@@ -10,7 +10,7 @@ public abstract class CommandController {
 
     private static void initCommands() {
         commands = new HashMap<>();
-        commands.put("ReplaceThis", new UnknownCommand());
+        commands.put("api", new CalcukatorAPICommand());
     }
 
     public static ICommand from(HttpServletRequest request) {
