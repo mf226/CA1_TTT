@@ -88,7 +88,7 @@
                 <version>2.12.1</version>
                 <configuration>
                     <excludes>
-                        <exclude>**/integrationtests/*</exclude>
+                        <exclude>**/integrationTest/*</exclude>
                     </excludes>
                 </configuration>
             </plugin>
@@ -98,7 +98,7 @@
                 <version>2.12.4</version>
                 <configuration>
                     <includes>
-                        <include>**/integrationtests/*</include>
+                        <include>**/integrationTest/*</include>
                     </includes>
                 </configuration>
                 <executions>
