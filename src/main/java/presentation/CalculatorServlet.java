@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "CalculatorServlet", urlPatterns = {"/calculator"})
+@WebServlet(name = "CalculatorServlet", urlPatterns = {"/calculatorServlet"})
 public class CalculatorServlet extends HttpServlet {
 
     Calculator calc = new Calculator();
