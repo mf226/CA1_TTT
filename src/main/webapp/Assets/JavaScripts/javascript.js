@@ -16,8 +16,8 @@ for (var i = 0; i < operations.length; i++) {
 
 clear.addEventListener('click', function (event) {
     result.innerHTML = "";
-    document.getElementById("firstNumber").innerHTML = "";
-    document.getElementById("secondNumber").innerHTML = "";
+    document.getElementById("firstNumber").value = 0;
+    document.getElementById("secondNumber").value = 0;
 });
 
 function switcherino(operation) {
