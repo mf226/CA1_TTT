@@ -6,17 +6,20 @@
         <title>Calculator</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Hello Nerdz!</h1>
         <input type="number" id="firstNumber">
         <br>
         <input type="number" id="secondNumber">
         <br>
-        <button>+</button>
-        <button>-</button>
-        <button>*</button>
-        <button>/</button>
+        <div id="operations">
+            <button>+</button>
+            <button>-</button>
+            <button>*</button>
+            <button>/</button>
+        </div>
         <br>
-        <button>Clear</button>
+        <button id="clear">Clear</button>
         <p id="result"></p>
+        <script src="../Assets/JavaScripts/javascript.js" type="text/javascript"></script>
     </body>
 </html>
