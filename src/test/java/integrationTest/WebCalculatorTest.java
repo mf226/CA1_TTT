@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 public class WebCalculatorTest {
 
-    HttpClient client = new HttpClient("http://localhost:7777/CA1_TTT/calculator");
+    HttpClient client = new HttpClient("http://localhost:7777/CA1/calculator");
 
     @Test
     public void testAdd() throws IOException {
