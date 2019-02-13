@@ -20,6 +20,6 @@
         <br>
         <button id="clear">Clear</button>
         <p id="result"></p>
-        <script src="../Assets/JavaScripts/javascript.js" type="text/javascript"></script>
+        <script src="javascript.js" type="text/javascript"></script>
     </body>
 </html>
