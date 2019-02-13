@@ -159,7 +159,7 @@
                         <artifactId>tomcat7-maven-plugin</artifactId>  
                         <version>2.2</version>  
                         <configuration>
-                            <url>https://dueinator.dk/manager</url>  
+                            <url>https://dueinator.dk/manager/text</url>  
                             <server>TomcatServer</server>
                             <path>/calculator</path>
                             <username>admin</username>
