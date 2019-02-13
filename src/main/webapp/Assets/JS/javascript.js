@@ -1,18 +1,21 @@
 var result = document.getElementById("result");
-var operations = document.getElementById("operations").children;
 var clear = document.getElementById("clear");
 
-for (var i = 0; i < operations.length; i++) {
-    operations[i].addEventListener('click', function (event) {
-        var operation = switcherino(operations[i]);
-        var n1 = document.getElementById("firstNumber").value;
-        var n2 = document.getElementById("secondNumber").value;
+function operationHandler(event) {
+    var opr = event.target.innerHTML;
+    alert(opr);
+    var operation = switcherino(opr);
+    var n1 = document.getElementById("firstNumber").value;
+    var n2 = document.getElementById("secondNumber").value;
 
-        fetch(`calculator?operation=${operation}&n1=${n1}&n2=${n2}`)
-                .then(res => res.text())
-                .then(d => { result.innerHTML = d; });
-    });
+    fetch(`calculatorServlet?operation=` + operation + `&n1=` + n1 + `&n2=` + n2)
+            .then(res => res.text())
+            .then(d => {
+                result.innerHTML = d;
+            });
 }
+
+document.getElementById("operations").onclick = operationHandler;
 
 clear.addEventListener('click', function (event) {
     result.innerHTML = "";
@@ -31,6 +34,6 @@ function switcherino(operation) {
         case "+":
             return "add";
         default:
-            break;
+            return "add";
     }
 }
