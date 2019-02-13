@@ -28,7 +28,7 @@
 
             for (var i = 0; i < operations.length; i++) {
                 operations[i].addEventListener('click', function (event) {
-                    var operation = switcherino(operations[i].innerText);
+                    var operation = switcherino(operations[i].nodeValue);
                     var n1 = document.getElementById("firstNumber").value;
                     var n2 = document.getElementById("secondNumber").value;
 
